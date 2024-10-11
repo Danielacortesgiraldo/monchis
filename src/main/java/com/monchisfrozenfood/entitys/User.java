@@ -35,5 +35,5 @@ public class User { /* Objeto de Java */
 
     @ManyToOne
     @JoinColumn(name = "fk_document_type_id", referencedColumnName = "document_type_id", nullable = false)
-    private Long fkDocumentTypeId;
+    private DocumentType fkDocumentTypeId;
 }

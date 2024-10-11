@@ -28,5 +28,5 @@ public class ShippingInfo {
 
     @ManyToOne
     @JoinColumn(name = "fk_order_id", referencedColumnName = "order_id", nullable = false)
-    private Long fkOrderId;
+    private Order fkOrderId;
 }

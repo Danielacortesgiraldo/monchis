@@ -23,5 +23,5 @@ public class Product {
 
     @ManyToOne
     @JoinColumn(name ="fk_product_sub_category_id", referencedColumnName = "product_sub_category_id", nullable = false)
-    private Long fkProductSubCategoryId;
+    private ProductSubCategory fkProductSubCategoryId;
 }

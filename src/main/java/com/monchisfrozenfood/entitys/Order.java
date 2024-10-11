@@ -20,5 +20,5 @@ public class Order {
 
     @ManyToOne
     @JoinColumn(name = "fk_user_id", referencedColumnName = "user_id", nullable = false)
-    private Long fkUserId;
+    private User fkUserId;
 }

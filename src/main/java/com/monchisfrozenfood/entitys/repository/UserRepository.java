@@ -9,7 +9,7 @@ import java.util.List;
 public interface UserRepository extends JpaRepository<User, Long> {
 
     @Query(value = "SELECT * FROM users", nativeQuery = true)
-    List<User> listUsers();
+    List<User> userList();
 
     @Override
     List<User> findAll();

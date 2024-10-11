@@ -13,12 +13,12 @@ public class OrderDetail {
     private Long orderDetailId;
 
     @Column(name = "fk_product_id", nullable = false)
-    private Long fkProductId;
+    private Product fkProductId;
 
     @Column(name = "product_quantity", nullable = false)
     private Long productQuantity;
 
     @ManyToOne
     @JoinColumn(name = "fk_order_id", referencedColumnName = "order_id", nullable = false)
-    private Long fkOrderId;
+    private Order fkOrderId;
 }

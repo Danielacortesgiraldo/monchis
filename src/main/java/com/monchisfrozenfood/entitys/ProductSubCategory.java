@@ -18,5 +18,5 @@ public class ProductSubCategory {
 
     @ManyToOne
     @JoinColumn(name = "fk_product_category_id", referencedColumnName = "product_category_id", nullable = false)
-    private Long fkProductCategoryId;
+    private ProductCategory fkProductCategoryId;
 }
