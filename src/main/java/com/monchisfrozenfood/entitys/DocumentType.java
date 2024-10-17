@@ -1,9 +1,12 @@
 package com.monchisfrozenfood.entitys;
 
 import jakarta.persistence.*;
+import lombok.Builder;
+import lombok.Getter;
 
 @Entity
 @Table(name = "document_types")
+@Builder
 public class DocumentType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,6 +27,7 @@ public class DocumentType {
         this.documentTypeAcronym = documentTypeAcronym;
         this.documentTypeDescription = documentTypeDescription;
     }
+
 
     public Long getDocumentTypeId() {
         return documentTypeId;
