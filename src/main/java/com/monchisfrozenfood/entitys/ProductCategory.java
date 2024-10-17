@@ -1,14 +1,12 @@
 package com.monchisfrozenfood.entitys;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Table(name = "product_categories")
 /* lombok */
+@Builder
 @Getter
 @Setter
 @AllArgsConstructor
