@@ -3,7 +3,6 @@ package com.monchisfrozenfood.controller;
 
 import com.monchisfrozenfood.controller.request.DocumentTypeRequest;
 import com.monchisfrozenfood.controller.response.DocumentTypeResponse;
-import com.monchisfrozenfood.controller.response.UserResponse;
 import com.monchisfrozenfood.entitys.DocumentType;
 import com.monchisfrozenfood.services.service.DocumentTypeService;
 import lombok.RequiredArgsConstructor;

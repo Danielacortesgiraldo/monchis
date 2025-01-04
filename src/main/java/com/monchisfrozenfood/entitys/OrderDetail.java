@@ -12,8 +12,9 @@ public class OrderDetail {
     @Column(name = "order_detail_id")
     private Long orderDetailId;
 
-    @Column(name = "fk_product_id", nullable = false)
-    private Product fkProductId;
+    @ManyToOne
+    @JoinColumn(name = "fk_product_id", referencedColumnName = "product_category_id", nullable = false)
+    private ProductCategory fkProductId;
 
     @Column(name = "product_quantity", nullable = false)
     private Long productQuantity;

@@ -1,18 +1,26 @@
 package com.monchisfrozenfood.entitys;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.security.cert.CertPathBuilder;
 
 @Entity
 @Table(name = "products")
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "product_id")
     private Long productId;
 
-    @Column(name = "product_name", nullable = false)
+    @Column(name = "product_name")
     private String productName;
 
     @Column(name = "product_description", nullable = false)
@@ -22,6 +30,7 @@ public class Product {
     private Long productCost;
 
     @ManyToOne
-    @JoinColumn(name ="fk_product_sub_category_id", referencedColumnName = "product_sub_category_id", nullable = false)
+    @JoinColumn(name = "fk_product_sub_category_id", referencedColumnName = "product_sub_category_id", nullable = false)
     private ProductSubCategory fkProductSubCategoryId;
+
 }

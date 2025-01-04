@@ -19,7 +19,7 @@ public class UserRestController {
     String message = "Operation completed successfully.";
 
     @GetMapping("/list")
-    public ResponseEntity<List<User>> userListApi() {
+    public ResponseEntity<List<User>> listUserApi() {
         List<User> usersList = userService.getUsersList();
         return new ResponseEntity<>(usersList, HttpStatus.ACCEPTED);
     }

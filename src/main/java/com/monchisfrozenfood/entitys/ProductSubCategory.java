@@ -8,6 +8,8 @@ import lombok.*;
 @Table(name = "product_sub_categories")
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 
 public class ProductSubCategory {
     @Id

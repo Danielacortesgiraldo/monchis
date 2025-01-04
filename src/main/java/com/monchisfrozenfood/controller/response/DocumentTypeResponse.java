@@ -1,8 +1,6 @@
 package com.monchisfrozenfood.controller.response;
 
-import jakarta.persistence.Column;
 import lombok.*;
-
 
 @Builder
 @Getter
